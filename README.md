@@ -442,7 +442,7 @@ The platform underwent deliberate fault injection and resolved real-world lab an
 
 ---
 
-## 9. Phase 2: Harden, Recover, and Troubleshoot
+## 9.Phase 2: Harden, Recover, and Troubleshoot
 
 ### Extension A: Backup DNS Resolver and High Availability
 - **Architecture**: A secondary `dnsmasq` instance is deployed on Mac 4 (`10.7.31.47`) with identical zone records.
@@ -510,19 +510,17 @@ When diagnosing any unknown network failure, Team Baby Shark follows a strict de
 
 | Step | Action | Execution Command | Evaluator Verification Checklist |
 |:---:|:---|:---|:---|
-| **1** | Present Topology & IP Inventory | Open project documentation and display network table | Confirm 4 host roles: Mac 1 (DNS), Mac 2 (Edge), Mac 3 (Backend A), Mac 4 (Backend B). |
-| **2** | Confirm LAN Reachability | `ping -c 2 10.7.18.79 && ping -c 2 10.7.17.218 && ping -c 2 10.7.31.47` | 0% packet loss, valid ICMP RTT. |
-| **3** | Resolve Domain from Client | `dig @10.7.19.196 app.team1.test +short` | Query resolves to Mac 2 IP (`10.7.18.79`) via team DNS. |
-| **4** | HTTPS Request via Domain | `curl -i https://app.team1.test:8443/api/status` | HTTP 200 OK returned; trusted certificate with no `-k` bypass. |
-| **5** | Demonstrate Load Balancing | `./tests/load-balancing-test.sh` | Alternating `X-Backend: A` and `X-Backend: B` headers observed over 20 requests. |
-| **6** | Wireshark Protocol Flow Evidence | Open `.pcapng` in Wireshark (`evidence/task-g/`) | Display DNS query/response, TCP 3-way handshake (`SYN`-`SYN/ACK`-`ACK`), TLS ClientHello and Certificate. |
+| **1** | Present the Network Topology & IP Inventory | Open the project documentation and display the network table | Confirm all 4 host roles: Mac 1 (DNS), Mac 2 (Edge), Mac 3 (Backend A), Mac 4 (Backend B). |
+| **2** | Verify LAN Connectivity | `ping -c 2 10.7.18.79 && ping -c 2 10.7.17.218 && ping -c 2 10.7.31.47` | Confirm 0% packet loss and valid ICMP RTT. |
+| **3** | Verify Domain Resolution from the Client | `dig @10.7.19.196 app.team1.test +short` | Confirm that the query resolves to the Mac 2 IP (`10.7.18.79`) through the team DNS. |
+| **4** | Perform an HTTPS Request Using the Domain | `curl -i https://app.team1.test:8443/api/status` | Confirm that HTTP 200 OK is returned with a trusted certificate and no `-k` bypass. |
+| **5** | Demonstrate Load Balancing | `./tests/load-balancing-test.sh` | Observe alternating `X-Backend: A` and `X-Backend: B` headers across 20 requests. |
+| **6** | Capture Wireshark Protocol Flow Evidence | Open `.pcapng` in Wireshark (`evidence/task-g/`) | Display the DNS query/response, TCP 3-way handshake (`SYN`-`SYN/ACK`-`ACK`), TLS ClientHello, and Certificate. |
 | **7** | Demonstrate HTTP Caching | `./tests/caching-test.sh` | Confirm `HTTP/1.1 304 Not Modified` and `Cache-Control: max-age=60`. |
-| **8** | Fail One Backend | Stop Backend A on Mac 3 (`Ctrl+C`); rerun client curl | Requests continue to succeed seamlessly via Backend B with `X-Backend: B`. |
-| **9** | Demonstrate Phase 2 Resilience | Stop Mac 1 DNS; show resolution fallback to Mac 4 secondary | Name resolution continues uninterrupted. |
-| **10** | Diagnose Faculty-Injected Fault | Execute 6-step troubleshooting methodology | Systematic diagnosis identifying faulty layer (DNS, TCP, TLS, or Upstream). |
-| **11** | Individual Viva Voce | Individual verbal examination | Each student defends their configured component and protocol theory. |
-
----
+| **8** | Simulate a Backend Failure | Stop Backend A on Mac 3 (`Ctrl+C`); rerun the client curl | Confirm that requests continue to succeed seamlessly through Backend B with `X-Backend: B`. |
+| **9** | Demonstrate Phase 2 Resilience | Stop Mac 1 DNS; show resolution fallback to Mac 4 secondary | Confirm that name resolution continues without interruption. |
+| **10** | Diagnose the Faculty-Injected Fault | Execute the 6-step troubleshooting methodology | Systematically diagnose and identify the faulty layer (DNS, TCP, TLS, or Upstream). |
+| **11** | Individual Viva Voce | Individual verbal examination | Each student must defend their configured component and demonstrate understanding of the relevant protocol theory. |
 
 ## 11. Individual Viva Voce Preparation Guide — Team Baby Shark
 
