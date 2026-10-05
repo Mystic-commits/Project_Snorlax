@@ -29,7 +29,7 @@ The platform distributes network responsibilities across four distinct physical 
 |:---|:---|:---:|:---|:---|:---|:---|:---|
 | **Mac 1** | **Yug Johri** | 2401010520 | `cn-dns` | Private DNS Resolver + Test Client | `dnsmasq` 2.93, `dig`, `nslookup`, `curl` | `10.7.19.196:53` (UDP/TCP) | Managed DNS (AWS Route 53, CoreDNS) |
 | **Mac 2** | **Anshvardhan Badkur** | 2401010083 | `cn-edge` | Edge Reverse Proxy + Load Balancer + TLS Termination | `nginx` 1.31.6, mkcert / OpenSSL TLS Engine | `10.7.18.79:8080` (HTTP), `10.7.18.79:8443` (HTTPS) | Cloud Load Balancer (AWS ALB, GCP NLB), CDN Edge |
-| **Mac 3** | **Ishita Thakur** | — | `cn-backend-a` | Backend Application Server 1 | Node.js / Express REST Service | `10.7.17.218:3001` (HTTP) *(DHCP moved from 10.7.11.99)* | Application Server Instance A (AWS EC2 / ECS) |
+| **Mac 3** | **Ishita Thakur** | 2401010195 | `cn-backend-a` | Backend Application Server 1 | Node.js / Express REST Service | `10.7.17.218:3001` (HTTP) *(DHCP moved from 10.7.11.99)* | Application Server Instance A (AWS EC2 / ECS) |
 | **Mac 4** | **Aditya Verma** | 2401010040 | `cn-backend-b` | Backend Application Server 2 + Test Client | Python Flask / Werkzeug REST Service, `curl` | `10.7.31.47:3002` (HTTP) | Application Server Instance B + Internal Consumer |
 
 **Repository**: [Mystic-commits/Project_Snorlax](https://github.com/Mystic-commits/Project_Snorlax)
