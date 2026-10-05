@@ -41,7 +41,7 @@ except ImportError:
                 payload = {
                     "backend": BACKEND_ID,
                     "status": "ok",
-                    "service": "TeamBabyShark",
+                    "service": "TeamSnorlax",
                 }
             elif self.path == "/api/status":
                 payload = {"backend": BACKEND_ID, "status": "ok"}
@@ -72,7 +72,7 @@ except ImportError:
     if __name__ == "__main__":
         server = HTTPServer((HOST, PORT), BackendHandler)
         print(f"Backend B running on http://{HOST}:{PORT}")
-        print("Machine: Mac 4 | Member: Aditya Verma | Team Baby Shark")
+        print("Machine: Mac 4 | Member: Aditya Verma | Team Snorlax")
         try:
             server.serve_forever()
         except KeyboardInterrupt:

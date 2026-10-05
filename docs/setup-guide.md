@@ -1,6 +1,6 @@
 # Cluster Setup and Deployment Runbook
 
-## Computer Networks Capstone: Private Network Service Platform — Team Baby Shark
+## Computer Networks Capstone: Private Network Service Platform — Team Snorlax
 
 ### Core Principle
 > "The application stays simple; the network is the project."

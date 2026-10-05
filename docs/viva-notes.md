@@ -1,6 +1,6 @@
 # Comprehensive Team Viva Voce Revision Guide
 
-## Computer Networks Capstone: Private Network Service Platform — Team Baby Shark
+## Computer Networks Capstone: Private Network Service Platform — Team Snorlax
 
 ---
 

@@ -9,7 +9,7 @@ x509_extensions = v3_req
 C = IN
 ST = Haryana
 L = Sonipat
-O = Team Baby Shark
+O = Team Snorlax
 OU = Computer Networks
 CN = app.team1.test
 

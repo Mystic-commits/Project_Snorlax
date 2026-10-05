@@ -1,5 +1,5 @@
 # Private Network Service Platform
-## Computer Networks Capstone Course Project — Team Baby Shark
+## Computer Networks Capstone Course Project — Team Snorlax
 
 ### Core Principle
 > "The application stays simple; the network is the project."
@@ -223,7 +223,7 @@ The following table documents how every protocol implemented in this project map
   - **Backend A (Mac 3: Ishita Thakur)**: Node.js / Express binding to `0.0.0.0:3001`.
   - **Backend B (Mac 4: Aditya Verma)**: Python Flask / Werkzeug binding to `0.0.0.0:3002`.
   - Endpoints:
-    - `GET /`: Returns JSON status object with `"service": "TeamBabyShark"`.
+    - `GET /`: Returns JSON status object with `"service": "TeamSnorlax"`.
     - `GET /api/status`: Returns JSON status object (`{"backend": "A"|"B", "status": "ok"}`).
     - `GET /api/cached`: Returns cacheable content with `ETag: "v1"`.
   - Required Response Headers:
@@ -483,7 +483,7 @@ The platform underwent deliberate fault injection and resolved real-world lab an
   3. DNS round-robin across multiple public edge IP addresses.
 
 ### Extension E: Systematic Layer-by-Layer Troubleshooting Framework
-When diagnosing any unknown network failure, Team Baby Shark follows a strict deterministic bottom-up protocol audit:
+When diagnosing any unknown network failure, Team Snorlax follows a strict deterministic bottom-up protocol audit:
 
 ```
 [Layer 1/2]  Check Physical/Link Status   -> ifconfig en0 (status: active, valid IP assigned)
@@ -522,7 +522,7 @@ When diagnosing any unknown network failure, Team Baby Shark follows a strict de
 | **10** | Diagnose the Faculty-Injected Fault | Execute the 6-step troubleshooting methodology | Systematically diagnose and identify the faulty layer (DNS, TCP, TLS, or Upstream). |
 | **11** | Individual Viva Voce | Individual verbal examination | Each student must defend their configured component and demonstrate understanding of the relevant protocol theory. |
 
-## 11. Individual Viva Voce Preparation Guide — Team Baby Shark
+## 11. Individual Viva Voce Preparation Guide — Team Snorlax
 
 ### For Yug Johri (Mac 1 — DNS Specialist)
 - **What is the difference between an authoritative and recursive DNS server?**

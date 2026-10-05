@@ -1,6 +1,6 @@
 # Systematic Layer-by-Layer Troubleshooting Guide
 
-## Computer Networks Capstone: Private Network Service Platform — Team Baby Shark
+## Computer Networks Capstone: Private Network Service Platform — Team Snorlax
 
 When diagnosing network faults, start from the physical/link layer at the bottom and work upward. **Never start troubleshooting at the application layer (`curl`).**
 
@@ -42,7 +42,7 @@ When diagnosing network faults, start from the physical/link layer at the bottom
 
 ---
 
-## 3. Real Incident Case Studies Hit by Team Baby Shark
+## 3. Real Incident Case Studies Hit by Team Snorlax
 
 ### Incident 1: `NXDOMAIN` on `dig app.team1.test`
 - **Symptom**: Client failed to resolve `app.team1.test`.

@@ -34,7 +34,7 @@ def json_with_cache(payload, etag):
 @app.get("/")
 def root():
     return json_with_cache(
-        {"backend": BACKEND_ID, "status": "ok", "service": "TeamBabyShark"},
+        {"backend": BACKEND_ID, "status": "ok", "service": "TeamSnorlax"},
         STATUS_ETAG,
     )
 

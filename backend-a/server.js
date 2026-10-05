@@ -31,7 +31,7 @@ app.get("/", (req, res) => {
   sendPayload(req, res, {
     backend: BACKEND_ID,
     status: "ok",
-    service: "TeamBabyShark",
+    service: "TeamSnorlax",
   });
 });
 

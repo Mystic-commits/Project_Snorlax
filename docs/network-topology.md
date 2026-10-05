@@ -1,6 +1,6 @@
 # Network Topology and Addressing Specification
 
-## Computer Networks Capstone: Private Network Service Platform — Team Baby Shark
+## Computer Networks Capstone: Private Network Service Platform — Team Snorlax
 
 ### Subnet Overview
 - **Network CIDR**: `10.7.0.0/16` (Campus Private Wi-Fi LAN)

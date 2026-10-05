@@ -1,4 +1,4 @@
-# Evidence Index — Team Baby Shark
+# Evidence Index — Team Snorlax
 
 Live verification captures from the physical macOS nodes during the 1 Oct 2026 and 5 Oct 2026 laboratory working sessions.
 

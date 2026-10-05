@@ -1,6 +1,6 @@
 # System Architecture Specification
 
-## Computer Networks Capstone: Private Network Service Platform — Team Baby Shark
+## Computer Networks Capstone: Private Network Service Platform — Team Snorlax
 
 ### Core Philosophy
 > "The application stays simple; the network is the project."

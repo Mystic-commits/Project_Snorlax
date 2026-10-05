@@ -1,7 +1,7 @@
 # Mac 4 — Backend B
 
 ## Team member
-Aditya Verma (`2401010040`) — **TeamBabyShark**
+Aditya Verma (`2401010040`) — **TeamSnorlax**
 
 ## Where it runs (live lab)
 Terminal on Aditya's Mac: `~/backend — python app.py`

@@ -1,7 +1,7 @@
 # Mac 3 — Backend A
 
 ## Team member
-Ishita Thakur (`ishitathakur`) — **TeamBabyShark**
+Ishita Thakur (`ishitathakur`) — **TeamSnorlax**
 
 ## Where it runs (live lab)
 Terminal tab on Ishita's Mac: `~/backend-a — node server.js`

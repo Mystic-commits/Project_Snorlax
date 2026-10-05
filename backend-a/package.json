@@ -2,7 +2,7 @@
   "name": "backend-a",
   "version": "1.0.0",
   "private": true,
-  "description": "Team Baby Shark Backend A (Mac 3, port 3001)",
+  "description": "Team Snorlax Backend A (Mac 3, port 3001)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
