@@ -1,0 +1,14 @@
+# /opt/homebrew/etc/dnsmasq.conf
+# Team Baby Shark — Mac 1 (Yug Johri)
+# Live values from 1 Oct 2026: listen 10.7.19.196, map *.team1.test → 10.7.18.79
+
+domain-needed
+bogus-priv
+bind-interfaces
+listen-address=127.0.0.1,10.7.19.196
+port=53
+server=8.8.8.8
+no-poll
+log-queries
+log-facility=/tmp/dnsmasq.log
+conf-dir=/opt/homebrew/etc/dnsmasq.d/,*.conf

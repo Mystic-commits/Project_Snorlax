@@ -1,0 +1,8 @@
+# /opt/homebrew/etc/dnsmasq.d/project.conf
+# Private .test zone (RFC 2606 / RFC 6761). Do not use .local — mDNS owns that.
+
+address=/app.team1.test/10.7.18.79
+address=/api.team1.test/10.7.18.79
+local-ttl=30
+local=/test/
+domain=test
