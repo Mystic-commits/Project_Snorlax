@@ -6,7 +6,7 @@
 
 ---
 
-## 1. Project Purpose and Overview
+## 1.Project Purpose and Overview
 
 This project implements a fully functional, highly available private network service platform deployed across four physical macOS workstations connected to an isolated local area network (LAN) on campus Wi-Fi (`10.7.0.0/16`). Without relying on external cloud providers, pre-configured managed services, or public domain registrars, the platform demonstrates the complete lifecycle of a client network request from name resolution to encrypted application delivery.
 
