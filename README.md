@@ -554,11 +554,11 @@ When diagnosing any unknown network failure, Team Snorlax follows a strict deter
 
 ### For Aditya Verma (Mac 4 — Backend B and Client Testing Specialist)
 - **What constitutes a TCP socket pair?**
-  *A socket pair uniquely identifies a 4-tuple TCP connection: `(Source IP, Source Port, Destination IP, Destination Port)`. For example: `(10.7.31.47, 52194, 10.7.18.79, 8443)`.*
+  * A socket pair uniquely identifies a 4-tuple TCP connection: `(Source IP, Source Port, Destination IP, Destination Port)`. For example: `(10.7.31.47, 52194, 10.7.18.79, 8443)`.*
 - **What is the difference between an ephemeral port and a well-known port?**
-  *Well-known ports (0-1023) and registered ports (1024-49151) are dedicated to specific listening services (e.g., DNS on 53, HTTPS on 8443). Ephemeral ports (49152-65535 on macOS) are dynamically assigned by the client OS kernel for the lifetime of an outgoing connection.*
+  * Well-known ports (0-1023) and registered ports (1024-49151) are dedicated to specific listening services (e.g., DNS on 53, HTTPS on 8443). Ephemeral ports (49152-65535 on macOS) are dynamically assigned by the client OS kernel for the lifetime of an outgoing connection.*
 - **Why was Werkzeug/Flask chosen for Backend B while Node.js was chosen for Backend A?**
-  *To prove technology independence at the origin layer. The reverse proxy and client interact purely over standard HTTP/1.1 contracts regardless of whether the backend runtime is Node.js, Python, or Go.*
+  * To prove technology independence at the origin layer. The reverse proxy and client interact purely over standard HTTP/1.1 contracts regardless of whether the backend runtime is Node.js, Python, or Go.*
 
 ---
 
